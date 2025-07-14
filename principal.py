@@ -1,27 +1,22 @@
 from auxiliares.version import version_actual
+from negocio.negocio_menu import menu_principal
 from datos.asignatura import asignatura
+ 
 
-
-def menu_principal():
+def programa_principal():
     print()
     print(f"aplicacion gestion de notas {version_actual}")
-    print("=============================================")                  
+    print("=============================================")   
+                   
 
-    
     while True:
-        print("""
-              [1] gestion asignatura
-              [2] gestion docentes
-              [3] gestion estudiantes
-              [4] gestion notas
-              [0] salir""")
-        print("""
-              ================================================""")
+        menu_principal()
+
+       
         opcion = input("seleccione una opcion")
         if opcion =="1":
             contador=1
             for asig in asignatura:
-                
                 print(f"{contador} {asig}")
                 contador += 1
             
@@ -43,4 +38,4 @@ def menu_principal():
         
         
     
-menu_principal()    
+programa_principal()    
