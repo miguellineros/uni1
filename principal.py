@@ -1,11 +1,11 @@
 from auxiliares.version import version_actual
-from negocio.negocio_menu import menu_principal
-from datos.asignatura import asignatura
- 
+from negocio.negocio_menu import menu_principal,menu_asignatura
+
+from negocio.negocio_asignatura import listado_asignaturas,agregar_asignatura,modificar_asignatura,eliminar_asignatura
 
 def programa_principal():
     print()
-    print(f"aplicacion gestion de notas {version_actual}")
+    print(f"aplicacion gestion de notas {version_actual}  ")
     print("=============================================")   
                    
 
@@ -14,12 +14,26 @@ def programa_principal():
 
        
         opcion = input("seleccione una opcion")
+        print()
         if opcion =="1":
-            contador=1
-            for asig in asignatura:
-                print(f"{contador} {asig}")
-                contador += 1
-            
+            while True:
+                menu_asignatura()
+                opcion_asignatura = input("seleccione una opcion      ")
+                print()
+                if opcion_asignatura == "1":
+                    listado_asignaturas()
+                elif opcion_asignatura == "2":
+                    agregar_asignatura()
+                elif opcion_asignatura == "3":
+                    modificar_asignatura()
+                elif opcion_asignatura == "4":
+                    eliminar_asignatura()
+                elif opcion_asignatura == "0":
+                    print("volviendo al menu anterior...")
+                    break
+                else:
+                    print("Opcion ingresada no corresponde....")
+
         elif opcion =="2":
             print(f"usted a seleccionado la opcion {opcion}")
             pass
@@ -39,3 +53,7 @@ def programa_principal():
         
     
 programa_principal()    
+#contador=1
+#for asig in asignatura:
+ #   print(f"{contador} {asig}")
+  #  contador += 1

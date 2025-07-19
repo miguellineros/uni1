@@ -10,3 +10,17 @@ menu_principal = {
           
 
 }
+
+
+menu_asignatura = {
+
+    
+
+    1 : "listado asignatura",
+    2 : "agregar asignatura",
+    3 : "modificar asignatura",
+    4 : "eliminar asignatura",
+    0 : "volver al menu anterior"
+          
+
+}

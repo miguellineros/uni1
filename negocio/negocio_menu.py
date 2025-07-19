@@ -6,3 +6,9 @@ def menu_principal():
            
         print()        
             
+
+def menu_asignatura():
+      for clave, valor in opciones.menu_asignatura.items():
+            print(f"[{clave}] {valor}")
+      print()        
+                    

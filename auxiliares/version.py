@@ -11,8 +11,12 @@
 
 #historial
 #09.07.2025:se define menu principal
+#10.07.2025 : se agrega menu de opciones v1.1.0
+#19.07.2025 se agrega metodologia para escribir datos en archivos v1.2.0
+#19.07.2025 se agrega metodologia para modificar datos en archivos v1.2.0
+#19.07.2025 se agrega metodologia para eliminar datos en archivos v1.2.0
 
-version_actual = "1.o.o"
+version_actual = "1.4.o"
 
 
 

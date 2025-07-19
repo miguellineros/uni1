@@ -2,3 +2,5 @@ datos/__pycache__/asignatura.cpython-313.pyc
 auxiliares/__pycache__/version.cpython-313.pyc
 negocio/__pycache__/negocio_menu.cpython-313.pyc
 auxiliares/__pycache__/opciones_menu.cpython-313.pyc
+negocio/__pycache__/negocio_asignatura.cpython-313.pyc
+datos/__pycache__/datos_asignatura.cpython-313.pyc
