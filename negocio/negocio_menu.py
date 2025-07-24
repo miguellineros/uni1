@@ -1,14 +1,16 @@
-import auxiliares.opciones_menu as opciones
+from datos.conexion_DB import leer_datos
+
 
 def menu_principal():
-        for clave,valor in opciones.menu_principal.items():            
-            print(f"[{clave}] {valor}")
-           
-        print()        
-            
 
-def menu_asignatura():
-      for clave, valor in opciones.menu_asignatura.items():
-            print(f"[{clave}] {valor}")
-      print()        
-                    
+      consulta = '''
+        SELECT numero_opcion,nombre_opcion
+        FROM opciones_menu
+        WHERE tipo_menu = 1
+    '''
+      resultado = leer_datos(consulta)
+      print(resultado)
+
+
+def menu_asignaturas():
+    pass

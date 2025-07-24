@@ -1,5 +1,5 @@
 from auxiliares.version import version_actual
-from negocio.negocio_menu import menu_principal,menu_asignatura
+from negocio.negocio_menu import menu_principal,menu_asignaturas
 
 from negocio.negocio_asignatura import listado_asignaturas,agregar_asignatura,modificar_asignatura,eliminar_asignatura
 
@@ -17,7 +17,7 @@ def programa_principal():
         print()
         if opcion =="1":
             while True:
-                menu_asignatura()
+                menu_asignaturas()
                 opcion_asignatura = input("seleccione una opcion      ")
                 print()
                 if opcion_asignatura == "1":
@@ -57,3 +57,6 @@ programa_principal()
 #for asig in asignatura:
  #   print(f"{contador} {asig}")
   #  contador += 1
+
+#pip install mysql-connector-python==8.0.33
+  #mysql-connector-python 8.0.33
